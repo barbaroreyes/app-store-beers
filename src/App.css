@@ -1,4 +1,16 @@
-
+header{
+  background-color: black;
+  color: white;
+  padding:30px;
+}
+.nav{
+  display: flex;
+  justify-content: stretch;
+}
+.nav a {
+  display: flex;
+  margin: 10px;
+}
 .cards{
   display: flex;
   flex-wrap: wrap;
