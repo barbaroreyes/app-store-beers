@@ -16,6 +16,7 @@ const Home = () => {
           and most widely consumed alcoholic drinks in the world
           </span>
         </h1></h1>
+        <a href="#" className="btn btn-white">Go Inside to now more</a>
        </div>
     </div>
   )

@@ -58,7 +58,7 @@ header{
 height: 95vh;
 background-image:
  linear-gradient(transparent,
- rgb(121, 116, 116)),
+ rgb(209, 204, 204)),
  url('./components/images/project.jpeg');
 background-size: cover;
 background-position: top;
@@ -71,11 +71,35 @@ clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
   position: absolute;
   top:50%;
   left: 50%;
-  transform:translate(-40% ,-50%)
+  transform:translate(-40% ,-50%);
+text-align: center;
 }
 .primary{
   color: #ffff;
   text-transform: uppercase;
+}
+.btn:link,.btn:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15 40px;
+  display:inline-block;
+  border-radius: 100px;
+  
+
+}
+.btn-white:hover{
+  box-shadow: -10px -10px 25px rgb(245, 240, 240);
+  transform: translate(-3px)
+}
+.btn:active{
+  transform: translate(-1px);
+}
+.btn-white{
+  background: white;
+  color:rgb(20, 11, 11);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15 40px;;
 }
 .text1{
 display: block;
