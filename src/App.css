@@ -64,7 +64,32 @@ background-size: cover;
 background-position: top;
 clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
 
+}
 
+.box{
+  border : 1px solid white;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  background-color: red;
+}
+.primary{
+  color: #ffff;
+  text-transform: uppercase;
 
 
 }
+.text1{
+display: block;
+font-size: 60px;
+font-weight: 400;
+letter-spacing: 35px;
+}
+.text2{
+  display: block;
+  font-size: 20px;
+font-weight: 400;
+letter-spacing: 17.4px;
+  }
+
+
