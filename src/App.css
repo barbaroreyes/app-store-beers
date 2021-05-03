@@ -126,8 +126,9 @@ background-color: white;
   opacity:0;
 }
 .btn-animated{
-  
-}
+  animation :moveInButton .5s ease-out .75s;
+  animation-fill-mode: backwards;
+ }
 .text1{
 display: block;
 font-size: 60px;
@@ -170,4 +171,15 @@ animation: moveInRigth 3s ease-out;
     opacity:1;
     transform:translateX(0);
   }
+}
+@keyframes moveInButton{
+0%{
+  opacity: 0;
+  transform: translateY(30px);
+
+}
+100%{
+  opacity:1;
+  transform: translate(0);
+}
 }
