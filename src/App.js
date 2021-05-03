@@ -1,7 +1,11 @@
-import React,{useState}  from 'react'
-import NamesList from './components/namesList'
+import React from 'react'
+import NamesList from './components/Form/nameslist'
 import './App.css';
-import Cards from './components/Cards';
+import {Switch,Route} from 'react-router-dom'
+import Cards from './components/Cards/Cards';
+import  Nav  from './components/Nav/nav';
+import Home from './components/Home/home';
+
 
 
 function App() {
@@ -9,9 +13,20 @@ function App() {
 
   return (
     <div className="App">
-      <header>Hello</header>
-      <Cards/>
-       {/* <NamesList/> */}
+      <header><Nav/></header>
+      <Switch>
+       <Route exact path="/">
+         <Home/>
+       </Route>
+         <Route path="/beers">
+         <Cards/>
+         </Route>
+         <Route path='/namelist'>
+            <NamesList/>
+         </Route>
+      </Switch>
+     
+       
      </div>
   );
 }

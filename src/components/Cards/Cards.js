@@ -1,5 +1,5 @@
 import React ,{useState,useEffect}from 'react'
-import Card from './Card'
+import Card from '../Card/Card'
 const Cards = (props) => {
 const [takeOne, setTakeOne ] =useState([])
 const url = 'https://api.punkapi.com/v2/beers'
