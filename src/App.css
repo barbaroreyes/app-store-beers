@@ -9,8 +9,8 @@ body{
   font-weight: 400;
   font: size 16px;
   line-height:1.7;
-  color: #7777;
-  padding: 10px;
+  color: rgba(243, 235, 235, 0.467);
+ 
 }
 header{
   background-color: rgb(20, 20, 20);
