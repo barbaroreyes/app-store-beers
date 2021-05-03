@@ -84,11 +84,11 @@ text-align: center;
   padding: 15 40px;
   display:inline-block;
   border-radius: 100px;
-  transition: all 2s ;
+  transition: all 1s ;
 
 }
 .btn-white:hover{
-  box-shadow: -10px -10px 25px rgb(245, 240, 240);
+  box-shadow: 0 5px 10px rgb(245, 240, 240);
   transform: translate(-3px)
 }
 .btn:active{
