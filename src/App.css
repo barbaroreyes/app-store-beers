@@ -1,3 +1,17 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font: size 16px;
+  line-height:1.7;
+  color: #7777;
+  padding: 10px;
+}
 header{
   background-color: black;
   color: white;
@@ -41,5 +55,16 @@ header{
   width:50px;
 }
 .home {
+height: 95vh;
+background-image:
+ linear-gradient(transparent,
+ rgb(121, 116, 116)),
+ url('./components/images/project.jpeg');
+background-size: cover;
+background-position: top;
+clip-path: polygon(x,y,x,y);
+
+
+
 
 }
