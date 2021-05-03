@@ -24,6 +24,7 @@ header{
 .nav a {
   display: flex;
   margin: 10px;
+  color: white;
 }
 .cards{
   display: flex;
