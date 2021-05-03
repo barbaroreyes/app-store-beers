@@ -2,11 +2,12 @@ import React from 'react'
 import {Card,Button} from 'react-bootstrap'
 const CardId = (props) => {
   return (
-    <div className='card'>
-           <Card style={{ width: '18rem' }}>
-  <Card.Img style={{width:'200px'}} variant="top" src={props.image_url}/>
+    <div >
+  <Card className='card' style={{ width: '18rem' }}>
+  <Card.Title>{props.name}</Card.Title>
+  <Card.Img style={{width:'50px'}} variant="top" src={props.image_url}/>
   <Card.Body>
-    <Card.Title>{props.name}</Card.Title>
+    
     <Card.Text>
       {props.first_brewed}
     </Card.Text>
