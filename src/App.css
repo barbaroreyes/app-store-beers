@@ -13,7 +13,7 @@ body{
   padding: 10px;
 }
 header{
-  background-color: rgb(54, 52, 42);
+  background-color: rgb(20, 20, 20);
   color: white;
   padding:30px;
 }
@@ -59,8 +59,7 @@ header{
 .home {
 height: 95vh;
 background-image:
- linear-gradient(transparent,
- rgb(209, 204, 204)),
+ 
  url('./components/images/project.jpeg');
 background-size: cover;
 background-position: top;
@@ -94,7 +93,8 @@ clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
 }
 .btn-white:hover{
   box-shadow: 0 5px 10px rgb(245, 240, 240);
-  transform: translate(-3px)
+  transform: translate(-3px);
+  color:red;
 }
 .btn:active{
   transform: translate(-1px);
@@ -126,6 +126,7 @@ background-color: white;
 .btn:hover::after{
   transform:scaleX(1.4)scaleY(1.6);
   opacity:0;
+  color: red;
 }
 .btn-animated{
   animation :moveInButton .5s ease-out .75s;

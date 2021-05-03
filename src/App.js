@@ -25,7 +25,7 @@ function App() {
             <NamesList/>
          </Route>
       </Switch>
-     
+  
        
      </div>
   );
