@@ -2,8 +2,8 @@
 
 ## Project Links
 
-- [add your github repo link](https://github.com/barbaroreyes/proyect2)
-- [add your deployment link](https://barbaro-project2.netlify.app/)
+- [add your github repo link](https://github.com/barbaroreyes/app-store-beers)
+- [add your deployment link](https://barbaro-store-beers.netlify.app/)
 
 ## Project Description
 This Small Store will take you to know part of the beer culture.
