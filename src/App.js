@@ -1,6 +1,7 @@
 import React,{useState}  from 'react'
 import NamesList from './components/namesList'
 import './App.css';
+import Cards from './components/Cards';
 
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
 
   return (
     <div className="App">
-       <NamesList/>
+      <header>Hello</header>
+      <Cards/>
+       {/* <NamesList/> */}
      </div>
   );
 }
