@@ -10,7 +10,9 @@ const CardId = (props) => {
        <p>{props.tagline}</p>
        
       </div>
-      <Button className='btn' variant="primary" size="lg"><Link to='/cart'>History</Link>
+      <Button  className='btn' 
+      variant="primary" size="lg">
+        <Link to='/cart'>History</Link>
       </Button>
 
         

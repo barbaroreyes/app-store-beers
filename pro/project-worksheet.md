@@ -71,7 +71,7 @@ This one for homePage
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 - [add link to your wireframes](https://imgur.com/yGgBLND)
-- [add link to your react architecture](https://imgur.com/eRcdPI3)
+- [add link to your react architecture](https://imgur.com/zQBbUBz)
 
 
 ### MVP/PostMVP - 5min

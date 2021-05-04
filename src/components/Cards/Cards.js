@@ -8,6 +8,7 @@ const [cart,setCart] = useState([])
 
 const addedTocart = (takeOne)=> {
  console.log('takeOne,takeOne')
+ setCart(takeOne)
 }
 
 
@@ -28,6 +29,7 @@ const loaded = () => {
       {takeOne.map((item) =>{
           return (
           <Card key={item.id} 
+          onClick={()=>{addedTocart(item)}}
           {...item}/> )})}
          
       </div>

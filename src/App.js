@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import NamesList from './components/Form/nameslist'
 import './App.css';
 import {Switch,Route} from 'react-router-dom'
@@ -9,7 +9,8 @@ import Footer from './components/footer/footer'
 import Cart from './components/Cart/cart';
 
 
-function App() {
+function App(props) {
+  const [cart, setCart] = useState([])
 return (
     <div className="App">
       <header><Nav/></header>
@@ -25,10 +26,8 @@ return (
          </Route>
          <Route path='/cart'>
            <Cart/>
-
-         </Route>
-
-      </Switch>
+        </Route>
+     </Switch>
     <Footer/>
        
      </div>
