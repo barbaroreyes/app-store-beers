@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
           and most widely consumed alcoholic drinks in the world
           </span>
         </h1></h1>
-        <a href="#" className="btn btn-white btn-animated">Go Inside to now more</a>
+        <Link to='/beers' className="btn btn-white btn-animated">Go Inside to now more</Link>
        </div>
     </div>
   )

@@ -5,13 +5,11 @@ import {Switch,Route} from 'react-router-dom'
 import Cards from './components/Cards/Cards';
 import  Nav  from './components/Nav/nav';
 import Home from './components/Home/home';
-
+import Footer from './components/footer/footer'
 
 
 function App() {
-
-
-  return (
+return (
     <div className="App">
       <header><Nav/></header>
       <Switch>
@@ -25,7 +23,7 @@ function App() {
             <NamesList/>
          </Route>
       </Switch>
-  
+    <Footer/>
        
      </div>
   );

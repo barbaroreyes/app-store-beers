@@ -1,5 +1,6 @@
 import React from 'react'
 import {Button} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 const CardId = (props) => {
   return (
     <div  className ='card'>
@@ -9,7 +10,8 @@ const CardId = (props) => {
        <p>{props.tagline}</p>
        
       </div>
-      <Button variant="primary" size="lg">Clickme</Button>
+      <Button className='btn' variant="primary" size="lg"><Link to='/cart'>History</Link>
+      </Button>
 
         
     </div>
