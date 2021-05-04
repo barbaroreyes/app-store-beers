@@ -21,7 +21,7 @@ const [team, setTeam ]= useState([])
       <div className='rectangule'>
         <h3>Team</h3>
          {team.map((item,i)=>{
-           return(<p>{item.name}</p>)
+           return(<p key={i}>{item.name}</p>)
          })}
 
         </div>
