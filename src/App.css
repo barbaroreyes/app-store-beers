@@ -149,8 +149,7 @@ animation: moveInRigth 3s ease-out;
   .footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border: 1px solid black;
+    justify-content: center;
     padding : 100px; 
   }
   .circle{
@@ -175,20 +174,29 @@ animation: moveInRigth 3s ease-out;
     padding: 10px;
   }
   .cart{
-    border: 1px solid black;
-    padding: 40px;
-    display: flex;
+    display:flex;
+    flex-direction:column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+    
+    height: 300px;
+    padding: 40px;
   }
   .cart-in{
     border: 1px solid black;
-    width: 400px;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items:center;
     padding: 50px;
+  }
+  .but{
+   padding:30px;
+  }
+  .butt{
+    margin :10px;
   }
 
 @keyframes moveInLeft{
@@ -229,4 +237,20 @@ animation: moveInRigth 3s ease-out;
   opacity:1;
   transform: translate(0);
 }
+}
+@media (min-width: 768px){
+  .footer{
+    display: flex;
+  }
+  .circle{
+    width: 200px;
+    height: 200px;
+  }
+  .cart{
+    border: 1px solid black;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
 }
