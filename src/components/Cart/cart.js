@@ -1,10 +1,12 @@
 import React from 'react'
-import Cart  from '../../components/images/cart-full.svg'
 
-const Cart = () => {
+const Cart = ( props) => {
+    console.log(props)
     return (
-        <div>
-            <img src={cart}/>
+        <div className='cart'>
+   <div className='cart-in'><p>Hello</p></div>   
+   <div className='cart-in'><p>Hello</p></div>   
+   <div className='cart-in'><p>Hello</p></div>            
         </div>
     )
 }

@@ -6,6 +6,7 @@ import Cards from './components/Cards/Cards';
 import  Nav  from './components/Nav/nav';
 import Home from './components/Home/home';
 import Footer from './components/footer/footer'
+import Cart from './components/Cart/cart';
 
 
 function App() {
@@ -22,6 +23,11 @@ return (
          <Route path='/namelist'>
             <NamesList/>
          </Route>
+         <Route path='/cart'>
+           <Cart/>
+
+         </Route>
+
       </Switch>
     <Footer/>
        

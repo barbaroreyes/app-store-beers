@@ -174,6 +174,22 @@ animation: moveInRigth 3s ease-out;
     align-items:center;
     padding: 10px;
   }
+  .cart{
+    border: 1px solid black;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .cart-in{
+    border: 1px solid black;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    padding: 50px;
+  }
 
 @keyframes moveInLeft{
   0%{
