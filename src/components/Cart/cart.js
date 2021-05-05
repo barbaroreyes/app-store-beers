@@ -11,13 +11,14 @@ const Cart = ({cart ,handledelete }) => {
           key={item.id} 
          className ='cart-in'>
         {item.name}
-        <button onClick={()=>handledelete(index) }>delete</button>
+        <button onClick={()=>
+          handledelete(index) }>delete</button>
         <button >order</button>
         </div>)
 
        
   })} 
-  
+    
         </div>
     )
 }

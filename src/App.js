@@ -15,12 +15,10 @@ function App() {
 
 const  addToCart = name => 
 setCart([...cart,name])
-
-
- const handledelete = (pos) => {
-
-   const updatedCart = cart.filter((name, index) => index !== pos)
-    setCart(updatedCart)
+const handledelete = (pos) => {
+setCart(cart
+  .filter((name, index) => 
+  index !== pos)) 
 
  }
   
