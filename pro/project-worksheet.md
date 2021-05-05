@@ -81,7 +81,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP EXAMPLE
 - Display a HomePage whith infomation about the beers and button 'go inside  to show a beers page'
 - display a list of beers and the complete information of each one of them that will allow the customer to buy the one that best suits their needs according to its manufacture 
-- nuid a form to contact page
+- Build a form to contact page
 - Navbar with options that link to their corresponding pages
 - Will be designed for use on all views
 

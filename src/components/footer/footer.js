@@ -16,7 +16,11 @@ const [team, setTeam ]= useState([])
   return (
     <div className='footer'>
         {team.splice(0,3).map((item,i)=>{
-           return (<div className='circle'>{item.name}</div>)
+             return (<div 
+              key={i} 
+              className='circle'>
+              {item.name}
+              </div>)
          })}
       
        
@@ -24,7 +28,10 @@ const [team, setTeam ]= useState([])
         <div className='rectangule'>
         <h3>Team</h3>
          {team.map((item,i)=>{
-           return(<p key={i}>{item.name}</p>)
+           return(<p 
+              key={i}>
+              {item.name}
+              </p>)
          })}</div>
          
     </div>

@@ -1,4 +1,4 @@
-import React ,{useState}from 'react'
+import React,{useState} from 'react'
 import NamesList from './components/Form/nameslist'
 import './App.css';
 import {Switch,Route} from 'react-router-dom'
@@ -9,8 +9,20 @@ import Footer from './components/footer/footer'
 import Cart from './components/Cart/cart';
 
 
-function App(props) {
-  const [cart, setCart] = useState([])
+function App() {
+  
+  const [cart , setCart] = useState([])
+
+const  addToCart = (name)=> {
+     setCart([...cart,name])
+  
+  }
+  // const updatedCart = cart.filter((product, index) => index !== pos)
+  //   setCart(updatedCart)
+  
+
+
+
 return (
     <div className="App">
       <header><Nav/></header>
@@ -19,14 +31,16 @@ return (
          <Home/>
        </Route>
          <Route path="/beers">
-         <Cards/>
+         <Cards   addToCart={ addToCart}/>
          </Route>
          <Route path='/namelist'>
             <NamesList/>
          </Route>
          <Route path='/cart'>
-           <Cart/>
-        </Route>
+         <Cart cart= {cart} />
+         </Route>
+           
+        
      </Switch>
     <Footer/>
        

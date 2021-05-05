@@ -1,6 +1,7 @@
 import React ,{useState}from 'react'
 import uniqid from 'uniqid'
 
+
 const NamesList = () => {
     const [name,setName]= useState('');
     const [nameList ,setNameList] =useState ([])
@@ -11,6 +12,7 @@ const NamesList = () => {
 
     const addName= e =>{
     e.preventDefault();
+   
     if(!name.trim()){
         setError('Error')
         return
@@ -33,6 +35,7 @@ const NamesList = () => {
      setEdit(true)
      setName(item.titleName)
      setId(item.id)
+     
     }
     const editName = (e)=> {
      e.preventDefault()
