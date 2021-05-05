@@ -1,18 +1,23 @@
 import React from 'react'
 
 
-const Cart = ({cart}) => {
+const Cart = ({cart ,handledelete }) => {
 
        
     return (
         <div className='cart'>
-          {cart.map((item,i)=> {
+          {cart.map((item,index)=> {
     return (<div 
-      key={i} 
-      className ='cart-in'>
-        {item.description}</div>)
+          key={item.id} 
+         className ='cart-in'>
+        {item.name}
+        <button onClick={()=>handledelete(index) }>delete</button>
+        <button >order</button>
+        </div>)
+
        
   })} 
+  
         </div>
     )
 }

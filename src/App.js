@@ -13,12 +13,17 @@ function App() {
   
   const [cart , setCart] = useState([])
 
-const  addToCart = (name)=> {
-     setCart([...cart,name])
+const  addToCart = name => 
+setCart([...cart,name])
+
+
+ const handledelete = (pos) => {
+
+   const updatedCart = cart.filter((name, index) => index !== pos)
+    setCart(updatedCart)
+
+ }
   
-  }
-  // const updatedCart = cart.filter((product, index) => index !== pos)
-  //   setCart(updatedCart)
   
 
 
@@ -33,15 +38,16 @@ return (
          <Route path="/beers">
          <Cards   addToCart={ addToCart}/>
          </Route>
+         <Route path='/cart'>
+         <Cart 
+         cart= {cart}
+         handledelete ={ handledelete }
+          />
+         </Route>
          <Route path='/namelist'>
             <NamesList/>
          </Route>
-         <Route path='/cart'>
-         <Cart cart= {cart} />
-         </Route>
-           
-        
-     </Switch>
+        </Switch>
     <Footer/>
        
      </div>

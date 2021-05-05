@@ -10,7 +10,7 @@ const CardId = (props) => {
        <p>{props.tagline}</p>
        
       </div>
-      <Button onClick={()=> props.addToCart(props.name)} className='btn' 
+      <Button onClick={()=> props.addToCart({...props})} className='btn' 
       variant="primary" size="lg">
         <Link to='/cart'>History</Link>
       </Button>
