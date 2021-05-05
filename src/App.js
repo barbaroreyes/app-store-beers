@@ -9,22 +9,20 @@ import Footer from './components/footer/footer'
 import Cart from './components/Cart/cart';
 
 
-function App(props) {
+function App() {
   
-  const [cart , setCart] = useState([])
+const [cart , setCart] = useState([])
        
 const  addToCart = name => 
 setCart([...cart,name])
+localStorage.setItem('name',cart);
+
 const handledelete = (pos) => {
 setCart(cart
-  .filter((name, index) => 
-  index !== pos)) 
+.filter((name, index) => 
+index !== pos)) 
 
  }
-  
-  
-
-
 
 return (
     <div className="App">
