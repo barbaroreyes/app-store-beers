@@ -45,13 +45,14 @@ header{
   border: 1px solid;
   padding: 79px;
  text-align: center;
-  
+  border: 5px solid;
 }
 .card1{
   display: flex;
   justify-content: center;
   flex-direction:column;
   align-items:center;
+ 
 }
 .image1{
   width:50px;
@@ -179,26 +180,26 @@ animation: moveInRigth 3s ease-out;
     justify-content: center;
     align-items: center;
     color : red;
-    height: 300px;
-    padding: 40px;
+    height: 400px;
+    padding: 30px;
   }
   .cart-in{
     border: 1px solid black;
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items:center;
-    padding: 50px;
-  
-    color:  black
+    padding: 40px;
+  color:  black
   }
   .but{
-   padding:30px;
+   width:100px;
+   margin:10px;
   }
-  .butt{
-    margin :10px;
+  .btu{
+    margin-top :40px;
   }
 
 @keyframes moveInLeft{
