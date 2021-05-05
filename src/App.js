@@ -9,10 +9,10 @@ import Footer from './components/footer/footer'
 import Cart from './components/Cart/cart';
 
 
-function App() {
+function App(props) {
   
   const [cart , setCart] = useState([])
-
+       
 const  addToCart = name => 
 setCart([...cart,name])
 const handledelete = (pos) => {
@@ -28,7 +28,7 @@ setCart(cart
 
 return (
     <div className="App">
-      <header><Nav/></header>
+      <header><Nav cart={cart}/></header>
       <Switch>
        <Route exact path="/">
          <Home/>
