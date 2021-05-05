@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    justify-content: stretch;
+  }
+  .nav a {
+    display: flex;
+    margin: 10px;
+    font-weight:700;
+    color: #fff;
+    text-decoration: none;
+  }

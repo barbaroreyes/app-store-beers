@@ -17,16 +17,7 @@ header{
   color: white;
   padding:30px;
 }
-.nav{
-  display: flex;
-  justify-content: stretch;
-}
-.nav a {
-  display: flex;
-  margin: 10px;
-  color: #fff;
-  text-decoration: none;
-}
+
 .cards{
   display: flex;
   flex-wrap: wrap;
@@ -60,8 +51,7 @@ header{
 .home {
 height: 95vh;
 background-image:
- 
- url('./components/images/project.jpeg');
+url('./components/images/project.jpeg');
 background-size: cover;
 background-position: top;
 clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
@@ -179,13 +169,7 @@ animation: moveInRigth 3s ease-out;
     padding:30px;
     text-align: center;
     margin:10px;
-    /* width: 300px;
-    
-    
-    justify-content: center;
-    flex-direction:column;
-    
-    padding: 10px; */
+  
   }
   .cart{
     display:flex;
