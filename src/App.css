@@ -86,7 +86,7 @@ clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
 .btn-white:hover{
   box-shadow: 0 5px 10px rgb(245, 240, 240);
   transform: translate(-3px);
-  color:red;
+  
 }
 .btn:active{
   transform: translate(-1px);
@@ -118,7 +118,7 @@ background-color: white;
 .btn:hover::after{
   transform:scaleX(1.4)scaleY(1.6);
   opacity:0;
-  color: red;
+  
 }
 .btn-animated{
   animation :moveInButton .5s ease-out .75s;
@@ -246,10 +246,3 @@ animation: moveInRigth 3s ease-out;
 
 }
 
-/* .cart{ */
-  /* border: 1px solid black;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items:center; */
-/* } */
