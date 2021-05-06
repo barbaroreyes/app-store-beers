@@ -9,6 +9,7 @@ const Cart = (props) => {
   
    return (
         <div className='cart'>
+         
           {props.cart.map((item,index)=> {
             toast.success(`${item.name} Was Added to your cart`)
     return (<div 
@@ -22,11 +23,14 @@ const Cart = (props) => {
        <button  className='but' onClick={()=>
         props.handledelete(index) }>
            <Link to='/beers'>Detete</Link></button>
-        <button onClick={()=> toast.success(`Congratulations, your order ${item.name}  will be shipped within the next 3 business days`) } className='but'>order</button>
+        <button onClick={()=> 
+         toast.success(`Congratulations, your order ${item.name} 
+          will be shipped within the next 3 business days`) }
+         className='but'>order</button>
         
        </div>
            </div>
-        
+          
       
         </div>)
 
@@ -43,6 +47,7 @@ const Cart = (props) => {
         draggable
         pauseOnHover={false}
         />
+        <button onClick={props.deleteAll} className='but'>DeleteAll</button>
         </div>
     )
 }
