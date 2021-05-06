@@ -140,6 +140,11 @@ letter-spacing: 17.4px;
 animation: moveInRigth 3s ease-out;
   }
   .footer{
+    height: 95vh;
+background-image:
+url('./components/images/footer.jpeg');
+background-size: cover;
+background-position: top;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
