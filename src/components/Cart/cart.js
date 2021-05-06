@@ -10,7 +10,7 @@ const Cart = (props) => {
    return (
         <div className='cart'>
           {props.cart.map((item,index)=> {
-            toast.success(`${item.name} Was Added`)
+            toast.success(`${item.name} Was Added to your cart`)
     return (<div 
           key={item.id} 
          className ='cart-in'>
@@ -22,7 +22,7 @@ const Cart = (props) => {
        <button  className='but' onClick={()=>
         props.handledelete(index) }>
            <Link to='/'>Detete</Link></button>
-        <button className='but'>order</button>
+        <button onClick={()=> toast.success(`Congratulations, your order ${item.name}  will be shipped within the next 3 business days`) } className='but'>order</button>
         
        </div>
            </div>
@@ -34,8 +34,8 @@ const Cart = (props) => {
   })} 
      <ToastContainer
         position= 'bottom-left'
-        autoClose={3000}
-        hideProgressBar
+        autoClose={5000}
+        hideProgressBar={false}
         newestOnTop
         closeOnClick
         rtl={false}

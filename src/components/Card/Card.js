@@ -3,6 +3,8 @@ import {Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 const CardId = (props) => {
+
+  
   return (
     <div  className ='card'>
       <div className='card1'>

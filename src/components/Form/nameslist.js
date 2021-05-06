@@ -2,6 +2,7 @@ import React ,{useState}from 'react'
 import uniqid from 'uniqid'
 import { ToastContainer,toast } from 'react-toastify'
 
+
 const NamesList = () => {
     const [name,setName]= useState('');
     const [nameList ,setNameList] =useState ([])
@@ -13,8 +14,6 @@ const NamesList = () => {
     const addName= e =>{
     e.preventDefault();
     toast.success('named added')
-
-   
     if(!name.trim()){
         setError('Error')
         return
@@ -55,6 +54,8 @@ const NamesList = () => {
    
 const handleChangeName = e =>
  setName( e.target.value)
+
+ 
 
   return (
     <div>
