@@ -1,31 +1,27 @@
 import React ,{useState,useEffect}from 'react'
 import Loading from '../loading/loading'
 import Beer from '../Card/Card'
+
 const AllBeers = (props) => {
-
+  
 const [takeOne, setTakeOne ] =useState(null)
-
 const url = 'https://api.punkapi.com/v2/beers?page=2&per_page=25'
 useEffect(()=>{
-    (async ()=> {
+(async ()=> {
      const respo = await fetch(url)
      const data =  await respo.json()
-     setTakeOne(data)
-     
-     
-    })();
+     setTakeOne(data)})();
 },[])
 
 const loaded = () => {
   return (
     <div className="cards">
       {takeOne.map((item) =>{
-          return (
-          <Beer key={item.id} 
-          addToCart={props.addToCart}
-          {...item}/> )})}
-         
-      </div>
+       return (
+       <Beer key={item.id} 
+      addToCart={props.addToCart}
+     {...item}/> )})}
+     </div>
   )
 }
 const loading =() => {

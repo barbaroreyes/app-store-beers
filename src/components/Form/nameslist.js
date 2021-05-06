@@ -1,6 +1,6 @@
 import React ,{useState}from 'react'
 import uniqid from 'uniqid'
-
+import { ToastContainer,toast } from 'react-toastify'
 
 const NamesList = () => {
     const [name,setName]= useState('');
@@ -12,6 +12,8 @@ const NamesList = () => {
 
     const addName= e =>{
     e.preventDefault();
+    toast.success('named added')
+
    
     if(!name.trim()){
         setError('Error')
@@ -49,6 +51,7 @@ const NamesList = () => {
          setName('')
         
     }
+  
    
 const handleChangeName = e =>
  setName( e.target.value)
@@ -79,7 +82,7 @@ const handleChangeName = e =>
            </div>
            <div className='col'>
             <h2>add your name to this list</h2>
-            <form onSubmit={edit? editName:addName} className='form-group'>
+            <form onSubmit={edit ? editName:addName} className='form-group'>
                 <input className='form-control mb-3' 
                 type='text' 
                 placeholder='type your name'
@@ -98,7 +101,17 @@ const handleChangeName = e =>
              :(<div></div>)}
            </div>
            <div/>
-
+           <ToastContainer
+        position= 'bottom-left'
+        autoClose={3000}
+        hideProgressBar
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnVisibilityChange ={false}
+        draggable
+        pauseOnHover={false}
+        />
       </div>
     </div>
   )

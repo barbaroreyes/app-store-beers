@@ -13,9 +13,11 @@ body{
  
 }
 header{
-  background-color: rgb(20, 20, 20);
+  background-color: black;
   color: white;
   padding:30px;
+  display: flex;
+  border: 5px solid white;
 }
 
 .cards{

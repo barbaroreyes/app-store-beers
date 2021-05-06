@@ -25,7 +25,12 @@ index !== pos))
 
 return (
     <div className="App">
-      <header><Nav cart={cart}/></header>
+      <header>
+        <Nav cart={cart}/>
+          <div>
+          
+          </div>
+        </header>
       <Switch>
        <Route exact path="/">
          <Home/>
