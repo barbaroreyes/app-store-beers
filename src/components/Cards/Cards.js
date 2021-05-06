@@ -1,6 +1,7 @@
 import React ,{useState,useEffect}from 'react'
 import Loading from '../loading/loading'
 import Beer from '../Card/Card'
+import './index.css'
 
 const AllBeers = (props) => {
   

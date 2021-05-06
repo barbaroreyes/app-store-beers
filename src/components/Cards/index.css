@@ -1,0 +1,22 @@
+.cards{
+     display: flex;
+     flex-direction:column ;
+     justify-content: space-around;
+     align-items: center;
+     background-color: grey;
+
+
+    
+  }
+  @media (min-width:768px){
+    .cards{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(155, 124, 124);
+    
+
+    }
+  }

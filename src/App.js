@@ -22,10 +22,6 @@ setCart(cart
 index !== pos)) 
 
  }
- const deleteAll = ()=>{
-   setCart(cart)
-   console.log('delete')
- }
 
 return (
     <div className="App">
@@ -46,7 +42,6 @@ return (
          <Cart 
          cart={cart}
          handledelete ={ handledelete }
-         deleteAll= {deleteAll}
           />
          </Route>
          <Route path='/namelist'>
