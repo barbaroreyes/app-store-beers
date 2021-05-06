@@ -21,7 +21,7 @@ const Cart = (props) => {
         <div className='btu'>
        <button  className='but' onClick={()=>
         props.handledelete(index) }>
-           <Link to='/'>Detete</Link></button>
+           <Link to='/beers'>Detete</Link></button>
         <button onClick={()=> toast.success(`Congratulations, your order ${item.name}  will be shipped within the next 3 business days`) } className='but'>order</button>
         
        </div>
