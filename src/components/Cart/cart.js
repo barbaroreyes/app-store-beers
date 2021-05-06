@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { ToastContainer,toast } from 'react-toastify'
 import './index.css'
 
@@ -19,7 +20,8 @@ const Cart = (props) => {
         <p></p>
         <div className='btu'>
        <button  className='but' onClick={()=>
-        props.handledelete(index) }>delete</button>
+        props.handledelete(index) }>
+           <Link to='/'>Detete</Link></button>
         <button className='but'>order</button>
         
        </div>

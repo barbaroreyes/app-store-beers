@@ -1,7 +1,8 @@
 import React from 'react'
 import './index.css'
 import {Link} from 'react-router-dom'
-import {ReactComponent as CartEmpy}from '../images/assets/cart-empty.svg' 
+import  CartEmpy from '../images/spcart.png' 
+import  ADDCart from '../images/add.png' 
 
 
 
@@ -11,9 +12,9 @@ const Nav = ({cart}) => {
     <div className='nav'>
        <Link to='/'>Home</Link>
        <Link to='/beers'>Beers</Link>
-       <Link className='only' to='/cart'>{!cart.length? 'Cart': cart.length} <CartEmpy/></Link>
        <Link to='/namelist'>Register</Link>
-       
+       <Link className='only' to='/cart'>{!cart.length? <img src={CartEmpy} alt=''/> : <img src={ADDCart} alt=''/> }</Link>
+       {cart.length}
     </div>
   )
 }
