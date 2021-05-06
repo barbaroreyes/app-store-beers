@@ -58,5 +58,9 @@ padding:15px;
       color:  black;
       margin: 20px;
     }
+    .btu{
+      display: flex;
+      flex-direction: row;
+    }
   
   }

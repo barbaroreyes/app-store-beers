@@ -91,20 +91,19 @@ const handleChangeName = e =>
              </ul>
            </div>
            <div className='col'>
-            
+             
             <form onSubmit={edit ? editName:addName}>
-
-            <input className='btn btn-info btn-block'
+              <input 
                  type='submit'
                  placeholder='name'
                  value={edit? 'edit-name':'registration'}/>
                 <input
                 type='text' 
                 placeholder='your name'
-                 onChange={handleChangeName}value={name}/>
-
-               
-            </form>
+                onChange={handleChangeName}
+                value={name}
+                />
+             </form>
             {error != null ?
              (<div className='alert-danger'>{error}</div>)
              :(<div></div>)}

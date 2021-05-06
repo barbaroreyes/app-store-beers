@@ -27,7 +27,7 @@ const Cart = (props) => {
         <Link to='/beers'>Detete</Link></button>
         <button 
          className='but'>
-         <Link to='/namelist'>Order
+         <Link  to='/namelist'>Order
          </Link></button>
         
        </div>
