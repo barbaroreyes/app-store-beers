@@ -1,4 +1,7 @@
-.cart{height: 350px}
+.cart{
+  height: 350px;
+  color: #ffff
+}
 
 .cart-in{
  width: 200px;
