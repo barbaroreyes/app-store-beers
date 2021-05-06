@@ -9,13 +9,12 @@ import Footer from './components/footer/footer'
 import Cart from './components/Cart/cart';
 
 
+
 function App() {
   
-const [cart , setCart] = useState([])
-       
+const [cart , setCart] = useState([]);
 const  addToCart = name => 
 setCart([...cart,name])
-localStorage.setItem('name',cart);
 
 const handledelete = (pos) => {
 setCart(cart
@@ -44,9 +43,8 @@ return (
             <NamesList/>
          </Route>
         </Switch>
-    <Footer/>
-       
-     </div>
+     <Footer/>
+   </div>
   );
 }
 
