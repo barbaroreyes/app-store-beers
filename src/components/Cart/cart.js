@@ -15,6 +15,7 @@ const Cart = (props) => {
         <div className='info'>
         <p>Name:{item.name}</p>
         <p>{item.description}</p>
+        <p></p>
         <div className='btu'>
        <button  className='but' onClick={()=>
         props.handledelete(index) }>delete</button>
