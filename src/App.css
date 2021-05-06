@@ -21,6 +21,7 @@ header{
 }
 
 .cards{
+  width:100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,18 +30,19 @@ header{
 
 }
 .card{
-  margin: 30px;
+  width:100%;
+  margin: 10px;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  align-items:center;
-  width: 300px; 
-  border: 1px solid;
+  align-items:center; 
   padding: 79px;
- text-align: center;
+  text-align: center;
   border: 5px solid;
+  
 }
 .card1{
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction:column;
@@ -88,6 +90,17 @@ clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
   box-shadow: 0 5px 10px rgb(245, 240, 240);
   transform: translate(-3px);
   
+}
+.dad{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+ 
+  
+}
+.list-group{
+  border: 1px solid ;
 }
 .btn:active{
   transform: translate(-1px);
@@ -139,6 +152,15 @@ font-weight: 400;
 letter-spacing: 17.4px;
 animation: moveInRigth 3s ease-out;
   }
+  .order{
+    
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    padding: 40px;
+  }
   .footer{
     height: 95vh;
 background-image:
@@ -147,10 +169,6 @@ background-size: cover;
 background-position: top;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    flex-direction: column;
-    align-items: center; 
-    padding : 100px;   */
   }
   .circle{
   display:flex;

@@ -50,7 +50,7 @@ return (
           />
          </Route>
          <Route path='/namelist'>
-            <NamesList/>
+            <NamesList cart={cart}/>
          </Route>
         </Switch>
      <Footer/>

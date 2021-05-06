@@ -6,7 +6,9 @@ import './index.css'
 
 
 const Cart = (props) => {
-  
+   
+
+   
    return (
         <div className='cart'>
          
@@ -22,11 +24,11 @@ const Cart = (props) => {
         <div className='btu'>
        <button  className='but' onClick={()=>
         props.handledelete(index) }>
-           <Link to='/beers'>Detete</Link></button>
-        <button onClick={()=> 
-         toast.success(`Congratulations, your order ${item.name} 
-          will be shipped within the next 3 business days`) }
-         className='but'>order</button>
+        <Link to='/beers'>Detete</Link></button>
+        <button 
+         className='but'>
+         <Link to='/namelist'>Order
+         </Link></button>
         
        </div>
            </div>
@@ -47,7 +49,7 @@ const Cart = (props) => {
         draggable
         pauseOnHover={false}
         />
-        <button onClick={props.deleteAll} className='but'>DeleteAll</button>
+        
         </div>
     )
 }

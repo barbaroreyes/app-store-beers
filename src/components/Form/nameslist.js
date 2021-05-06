@@ -3,7 +3,13 @@ import uniqid from 'uniqid'
 import { ToastContainer,toast } from 'react-toastify'
 
 
-const NamesList = () => {
+const NamesList = ({cart}) => {
+ const infoCart = cart.map((item,i)=> {
+   return (<div key={i}>
+     <>Beer : {item.name}</>
+     <p>{item.description}</p>
+     </div>)
+ })
     const [name,setName]= useState('');
     const [nameList ,setNameList] =useState ([])
     const [edit ,setEdit]= useState(false)
@@ -13,7 +19,8 @@ const NamesList = () => {
 
     const addName= e =>{
     e.preventDefault();
-    toast.success('named added')
+    toast.success(`Congratulations, your order 
+       will be shipped within the next 3 business days`) 
     if(!name.trim()){
         setError('Error')
         return
@@ -59,14 +66,16 @@ const handleChangeName = e =>
 
   return (
     <div>
-      <h2>Crud App</h2>
-      <div className='row'>
+      
+      <div className='row dad'>
            <div className='col'>
-           <h2>Names list</h2>
-            <ul className='list-group'>
+           <h2>You Order</h2>
+           
+            <ul >
                 {nameList.map(item=>{
-        return  (<li key={item.id} className='list-group-item'>
+        return  (<div key={item.id} className='order'>
                     {item.titleName}
+                    {infoCart}
                     <button className='btn btn-danger float-right'
                     onClick={()=>{handleDelete(item.id)}}
                     >
@@ -77,25 +86,24 @@ const handleChangeName = e =>
                     >
                    Edition
                   </button>
-                </li>)
+                </div>)
                 })}
              </ul>
            </div>
            <div className='col'>
-            <h2>add your name to this list</h2>
-            <form onSubmit={edit ? editName:addName} className='form-group'>
-                <input className='form-control mb-3' 
-                type='text' 
-                placeholder='type your name'
-                 onChange={handleChangeName}
-                 
-                 value={name}
-                />
-                <input className='btn btn-info btn-block'
+            
+            <form onSubmit={edit ? editName:addName}>
+
+            <input className='btn btn-info btn-block'
                  type='submit'
                  placeholder='name'
-                 value={edit? 'edit-name':'registration'}
-                 />
+                 value={edit? 'edit-name':'registration'}/>
+                <input
+                type='text' 
+                placeholder='your name'
+                 onChange={handleChangeName}value={name}/>
+
+               
             </form>
             {error != null ?
              (<div className='alert-danger'>{error}</div>)

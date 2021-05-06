@@ -7,7 +7,7 @@ const CardId = (props) => {
   
   return (
     <div  className ='card'>
-      <div className='card1'>
+      <div className='card1 '>
       <img className='image1' src={props.image_url} alt=''/>
       <p>{props.name}</p>
        <p>{props.tagline}</p>
