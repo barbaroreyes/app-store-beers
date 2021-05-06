@@ -18,7 +18,7 @@ const CardId = (props) => {
       variant="primary" size="lg"
       
       >
-        <Link to='/cart'>History</Link>
+        <Link className='link' to='/cart'>History</Link>
       </Button>
       
       </div>
