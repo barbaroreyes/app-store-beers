@@ -31,7 +31,7 @@ const NamesList = ({cart, handleDeleteAll}) => {
     setInterval(()=> {
       setStatus(`Sending to ${name}`)
       setDays( `${days -1}`)
-    },2000)
+    },3000)
     toast.success(`Congratulations, your order 
        will be shipped within the next 3 business days`) 
       
