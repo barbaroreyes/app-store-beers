@@ -5,12 +5,14 @@ import { ToastContainer,toast } from 'react-toastify'
 
 const NamesList = ({cart, handleDeleteAll}) => {
   const [status ,setStatus]= useState('store')
+  const [days,setDays]= useState(3)
  
 
  const infoCart = cart.map((item,i)=> {
   
    return (<div key={i}>
      <p>Beer : {item.name}</p>
+     <>delivery-time : {days}</>
      
     
      </div>)
@@ -28,6 +30,7 @@ const NamesList = ({cart, handleDeleteAll}) => {
     e.preventDefault();
     setInterval(()=> {
       setStatus(`Sending to ${name}`)
+      setDays( `${days -1}`)
     },2000)
     toast.success(`Congratulations, your order 
        will be shipped within the next 3 business days`) 
@@ -90,7 +93,7 @@ const handleChangeName = e =>
                      <span>{status} </span>
                      
                   <img alt ='robot' src = {`https://robohash.org/${item.id}?200x200`} />
-                    {item.titleName}
+                    
                     {infoCart}
                     <button className='btn btn-danger float-right'
                     onClick={()=>{handleDelete(item.id)}}
