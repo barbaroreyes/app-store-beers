@@ -27,7 +27,7 @@ const NamesList = ({cart, handleDeleteAll}) => {
     const addName= e =>{
     e.preventDefault();
     setInterval(()=> {
-      setStatus(`send to ${name}`)
+      setStatus(`Sending to ${name}`)
     },2000)
     toast.success(`Congratulations, your order 
        will be shipped within the next 3 business days`) 
