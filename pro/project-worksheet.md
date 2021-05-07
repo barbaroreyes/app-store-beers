@@ -108,14 +108,14 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Creating plan && wireframes |H|4|6|time
-| Adding Form | H | 3| time | time|
-| Working with API | H | 3| time | time |
-| Home-Page-logic| H|3|time|time| 
-| Main_page-logic| H|3|time|time|
-|routing-Component-|H|4|time|time|
-|styling  | H|10|time|time|time|time|
-|Nav-completetion|H|4|time|time
-| Total | H | 40| 5 | 5 |
+| Adding Form | H | 3| 4 | time|
+| Working with API | H | 3| 3| time |
+| Home-Page-logic| H|3|3|time| 
+| Main_page-logic| H|3|4|time|
+|routing-Component-|H|4|3|time
+|styling  | H|10|10|time|time|time|
+|Nav-completetion|H|4|2|time
+| Total | H | 35| 5 | 5 |
 
 ## Additional Libraries
   

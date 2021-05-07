@@ -6,7 +6,7 @@ import './index.css'
 
 
 const Cart = (props) => {
-   
+    
 
    
    return (
