@@ -3,7 +3,7 @@ import uniqid from 'uniqid'
 import { ToastContainer,toast } from 'react-toastify'
 
 
-const NamesList = ({cart, handleDeleteAll}) => {
+const NamesList = ({cart, }) => {
   const [status ,setStatus]= useState('store')
   const [days,setDays]= useState(3)
  
