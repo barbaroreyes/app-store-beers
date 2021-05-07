@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import NamesList from './components/Form/nameslist'
 import './App.css';
 import {Switch,Route} from 'react-router-dom'
@@ -11,8 +11,18 @@ import Cart from './components/Cart/cart';
 
 
 function App() {
+
   
 const [cart , setCart] = useState([]);
+const [current ,setCurrent] = useState(new Date().toLocaleString())
+ 
+
+useEffect(()=>{
+ setInterval(() => {
+ setCurrent(new Date().toLocaleString().toLocaleString())
+ },1000)
+},[])
+
 const  addToCart = name => 
 setCart([...cart,name])
 
@@ -28,7 +38,7 @@ return (
       <header>
         <Nav cart={cart}/>
           <div>
-          
+          <div className='clock'>{current}</div>
           </div>
         </header>
       <Switch>

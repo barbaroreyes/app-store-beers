@@ -7,10 +7,12 @@ const NamesList = ({cart}) => {
  const infoCart = cart.map((item,i)=> {
    return (<div key={i}>
      <>Beer : {item.name}</>
-     <p>{item.description}</p>
+    
      </div>)
+
  })
-    const [name,setName]= useState('');
+   const [time] = useState(new Date().toLocaleString());
+   const [name,setName]= useState('');
     const [nameList ,setNameList] =useState ([])
     const [edit ,setEdit]= useState(false)
     const [id , setId] = useState('')
@@ -70,10 +72,12 @@ const handleChangeName = e =>
       <div className='row dad'>
            <div className='col'>
            <h2>You Order</h2>
-           
+               
+            
             <ul >
                 {nameList.map(item=>{
         return  (<div key={item.id} className='order'>
+                     <p>{time}</p> 
                   <img alt ='robot' src = {`https://robohash.org/${item.id}?200x200`} />
                     {item.titleName}
                     {infoCart}

@@ -14,6 +14,7 @@ const Cart = (props) => {
          
           {props.cart.map((item,index)=> {
             toast.success(`${item.name} Was Added to your cart`)
+            
     return (<div 
           key={item.id} 
          className ='cart-in'>
@@ -21,7 +22,8 @@ const Cart = (props) => {
         <p>Beer: {item.name}</p>
         <p>Description : {item.description}</p>
         <p>Food_Pairing : {item.food_pairing}</p>
-        <p>brewers_tips : {item.brewers_tips}</p>
+        
+        <p>Attenuation_level : {item.attenuation_level}</p>
         <p></p>
         <div className='btu'>
        <button  className='but' onClick={()=>
@@ -42,7 +44,7 @@ const Cart = (props) => {
   })} 
      <ToastContainer
         position= 'bottom-left'
-        autoClose={5000}
+        autoClose={10000}
         hideProgressBar={false}
         newestOnTop
         closeOnClick
