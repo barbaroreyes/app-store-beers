@@ -34,6 +34,9 @@ This Small Store will take you to know part of the beer culture.
 "unit": "litres"
 }
 
+ This one for a customer face
+ https://robohash.org
+
 This one for homePage
 
 {data: {https://jsonplaceholder.typicode.com/users} }

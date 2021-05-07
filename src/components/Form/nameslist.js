@@ -74,6 +74,7 @@ const handleChangeName = e =>
             <ul >
                 {nameList.map(item=>{
         return  (<div key={item.id} className='order'>
+                  <img alt ='robot' src = {`https://robohash.org/${item.id}?200x200`} />
                     {item.titleName}
                     {infoCart}
                     <button className='btn btn-danger float-right'
@@ -93,6 +94,7 @@ const handleChangeName = e =>
            <div className='col'>
              
             <form onSubmit={edit ? editName:addName}>
+           
               <input 
                  type='submit'
                  placeholder='name'
