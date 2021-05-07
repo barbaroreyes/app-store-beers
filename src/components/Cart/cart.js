@@ -18,8 +18,10 @@ const Cart = (props) => {
           key={item.id} 
          className ='cart-in'>
         <div className='info'>
-        <p>Name:{item.name}</p>
-        <p>{item.description}</p>
+        <p>Beer: {item.name}</p>
+        <p>Description : {item.description}</p>
+        <p>Food_Pairing : {item.food_pairing}</p>
+        <p>brewers_tips : {item.brewers_tips}</p>
         <p></p>
         <div className='btu'>
        <button  className='but' onClick={()=>
