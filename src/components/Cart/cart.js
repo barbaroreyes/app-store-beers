@@ -44,7 +44,7 @@ const Cart = (props) => {
   })} 
      <ToastContainer
         position= 'bottom-left'
-        autoClose={5000}
+        autoClose={10000}
         hideProgressBar={false}
         newestOnTop
         closeOnClick
