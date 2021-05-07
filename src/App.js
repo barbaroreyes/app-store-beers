@@ -26,11 +26,14 @@ setCart(cart
 index !== pos)) 
 
  }
+ const handleDeleteAll =()=> {
+   setCart(0)
+ }
 
 return (
     <div className="App">
       <header>
-        <Nav cart={cart}/>
+        <Nav cart={cart} />
           <div>
           <Clock/>
           </div>
@@ -49,7 +52,7 @@ return (
           />
          </Route>
          <Route path='/namelist'>
-            <NamesList cart={cart}/>
+            <NamesList cart={cart} handleDeleteAll={ handleDeleteAll}/>
          </Route>
         </Switch>
      <Footer/>

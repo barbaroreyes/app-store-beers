@@ -3,10 +3,15 @@ import uniqid from 'uniqid'
 import { ToastContainer,toast } from 'react-toastify'
 
 
-const NamesList = ({cart}) => {
+const NamesList = ({cart, handleDeleteAll}) => {
+  const [status ,setStatus]= useState('store')
+ 
+
  const infoCart = cart.map((item,i)=> {
+  
    return (<div key={i}>
-     <>Beer : {item.name}</>
+     <p>Beer : {item.name}</p>
+     
     
      </div>)
 
@@ -21,8 +26,12 @@ const NamesList = ({cart}) => {
 
     const addName= e =>{
     e.preventDefault();
+    setInterval(()=> {
+      setStatus(`send to ${name}`)
+    },2000)
     toast.success(`Congratulations, your order 
        will be shipped within the next 3 business days`) 
+      
     if(!name.trim()){
         setError('Error')
         return
@@ -78,6 +87,8 @@ const handleChangeName = e =>
                 {nameList.map(item=>{
         return  (<div key={item.id} className='order'>
                      <p>{time}</p> 
+                     <span>{status} </span>
+                     
                   <img alt ='robot' src = {`https://robohash.org/${item.id}?200x200`} />
                     {item.titleName}
                     {infoCart}

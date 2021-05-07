@@ -116,14 +116,14 @@ background-color: white;
 .text1{
 display: block;
 font-size: 30px;
-font-weight: 900;
+font-weight: 700;
 letter-spacing: 25px;
 animation: moveInLeft 3s ease-out;
 }
 .text2{
   display: block;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
 letter-spacing: 17.4px;
 animation: moveInRigth 3s ease-out;
   }
