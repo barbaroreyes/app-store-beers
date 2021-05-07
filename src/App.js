@@ -7,6 +7,7 @@ import  Nav  from './components/Nav/nav';
 import Home from './components/Home/home';
 import Footer from './components/footer/footer'
 import Cart from './components/Cart/cart';
+import Clock from './components/clock/clock'
 
 
 
@@ -14,14 +15,7 @@ function App() {
 
   
 const [cart , setCart] = useState([]);
-const [current ,setCurrent] = useState(new Date().toLocaleString())
- 
 
-useEffect(()=>{
- setInterval(() => {
- setCurrent(new Date().toLocaleString().toLocaleString())
- },1000)
-},[])
 
 const  addToCart = name => 
 setCart([...cart,name])
@@ -38,7 +32,7 @@ return (
       <header>
         <Nav cart={cart}/>
           <div>
-          <div className='clock'>{current}</div>
+          <Clock/>
           </div>
         </header>
       <Switch>

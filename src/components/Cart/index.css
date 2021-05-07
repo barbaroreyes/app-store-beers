@@ -7,7 +7,7 @@ flex-wrap: wrap;
 }
 
 .cart-in{
- height: 450px;
+ height: 600px;
  display: flex;
  padding: 10px;
  color:  black;
@@ -31,7 +31,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-height : 420px;
+height : 580px;
 padding:15px;      
      
   }
@@ -44,7 +44,7 @@ padding:15px;
       justify-content: center;
       align-items: center;
       color : black;
-      height: 500px;
+      height: 600px;
       padding: 40px;
     }
     .cart-in{
