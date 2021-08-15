@@ -1,6 +1,10 @@
-import React,{useState,useEffect} from 'react'
- 
-import './index.css'
+import './index.css';
+
+import React, {
+  useEffect,
+  useState,
+} from 'react';
+
 const Footer = () => {
 const [team, setTeam ]= useState([])
  const url = 'https://jsonplaceholder.typicode.com/users';
@@ -23,21 +27,25 @@ const [team, setTeam ]= useState([])
               {item.name}
               </div>)
          })}
-      
-       
-      
-        <div className='rectangule'>
+      <div className='rectangule'>
         <h3>Team</h3>
-         {team.map((item,i)=>{
+        <h1>Barbaro Reyes</h1>
+        
+         {/* {team.map((item,i)=>{
            return(<p 
               key={i}>
               {item.name}
               </p>)
-         })}</div>
+         })} */}
+         </div>
          
     </div>
   )
   
 }
 
+export default Footer
+}
+
+export default Footer
 export default Footer
