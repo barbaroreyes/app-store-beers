@@ -1,7 +1,12 @@
-import React ,{useState,useEffect}from 'react'
-import Loading from '../loading/loading'
-import Beer from '../Card/Card'
-import './index.css'
+import './index.css';
+
+import React, {
+  useEffect,
+  useState,
+} from 'react';
+
+import Beer from '../Card/Card';
+import Loading from '../loading/loading';
 
 const AllBeers = (props) => {
   
