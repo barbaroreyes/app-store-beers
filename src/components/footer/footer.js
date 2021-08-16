@@ -45,7 +45,3 @@ const [team, setTeam ]= useState([])
 }
 
 export default Footer
-
-
-
-export default Footer
