@@ -35,7 +35,7 @@ const Cart = (props) => {
          onClick={()=>
         props.handledelete(index)
          }>
-         Detet
+         Delete 
          </Link>
        
          <Link className='but'
