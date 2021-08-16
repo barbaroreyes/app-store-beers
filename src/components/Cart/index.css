@@ -22,6 +22,7 @@ width: 220px;
 text-align: center;
 justify-content: center;
 border:1px solid black;
+text-decoration: none;
 }
 
 .info{
