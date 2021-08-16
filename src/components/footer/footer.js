@@ -20,13 +20,13 @@ const [team, setTeam ]= useState([])
 
   return (
     <div className='footer'>
-        {team.splice(0,3).map((item,i)=>{
+        {/* {team.splice(0,3).map((item,i)=>{
              return (<div 
               key={i} 
               className='circle'>
               {item.name}
               </div>)
-         })}
+         })} */}
       <div className='rectangule'>
         <h3>Team</h3>
         <h1>Barbaro Reyes</h1>
