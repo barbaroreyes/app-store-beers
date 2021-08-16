@@ -1,9 +1,12 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import { ToastContainer,toast } from 'react-toastify'
-import './index.css'
+import './index.css';
 
+import React from 'react';
 
+import { Link } from 'react-router-dom';
+import {
+  toast,
+  ToastContainer,
+} from 'react-toastify';
 
 const Cart = (props) => {
     
@@ -26,13 +29,19 @@ const Cart = (props) => {
         <p>Attenuation_level : {item.attenuation_level}</p>
         <p></p>
         <div className='btu'>
-       <button  className='but' onClick={()=>
-        props.handledelete(index) }>
-        <Link to='/beers'>Detete</Link></button>
-        <button 
-         className='but'>
-         <Link  to='/namelist'>Order
-         </Link></button>
+      
+        <Link 
+        className='but' to='/beers'
+         onClick={()=>
+        props.handledelete(index)
+         }>
+         Detet
+         </Link>
+       
+         <Link className='but'
+          to='/namelist'>
+          Order
+         </Link>
         
        </div>
            </div>
